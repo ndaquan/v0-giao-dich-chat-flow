@@ -6,11 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    turbopack: {
-      resolveExtensions: ['.tsx', '.ts', '.jsx', '.js', '.mjs', '.cjs'],
-    },
-  },
 }
 
 export default nextConfig
