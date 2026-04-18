@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    // Tắt cache Turbopack để tránh lỗi trong v0 sandbox
-    turbopackFileSystemCacheForDev: false,
-  },
+  // Không cần experimental nữa nếu chỉ muốn tắt cache
+  // Hoặc để trống experimental nếu không dùng tính năng nào khác
 };
 
 export default nextConfig;
