@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
+  experimental: {
+    // Tắt cache Turbopack để tránh lỗi trong v0 sandbox
+    turbopackFileSystemCacheForDev: false,
   },
-  images: {
-    unoptimized: true,
-  },
-}
+};
 
-export default nextConfig
+export default nextConfig;
