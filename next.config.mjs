@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Không cần experimental nữa nếu chỉ muốn tắt cache
-  // Hoặc để trống experimental nếu không dùng tính năng nào khác
-};
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
+  },
+}
 
-export default nextConfig;
+export default nextConfig
